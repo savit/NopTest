@@ -3183,6 +3183,12 @@
   <LocaleResource Name="Admin.Catalog.Products.Fields.Sku.Reserved">
     <Value>The entered SKU is already reserved for the product '{0}'</Value>
   </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.Fields.Author">
+    <Value>Author</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.Fields.Author.Hint">
+    <Value>Author book.</Value>
+  </LocaleResource>
   <LocaleResource Name="Admin.Catalog.Products.Fields.StockQuantity">
     <Value>Stock quantity</Value>
   </LocaleResource>
@@ -3467,6 +3473,9 @@
   </LocaleResource>
   <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.AttributeCombinations.Fields.Picture.NoPicture">
     <Value>No picture</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.AttributeCombinations.Fields.Author">
+    <Value>AUTHOR</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.AttributeCombinations.Fields.Sku">
     <Value>SKU</Value>
@@ -17216,6 +17225,9 @@
   </LocaleResource>
   <LocaleResource Name="Products.Sku">
     <Value>SKU</Value>
+  </LocaleResource>
+  <LocaleResource Name="Products.Author">
+    <Value>Author</Value>
   </LocaleResource>
   <LocaleResource Name="Products.Specs">
     <Value>Products specifications</Value>

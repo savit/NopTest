@@ -719,7 +719,7 @@ namespace Nop.Services.Tests.ExportImport
                 "ApprovedTotalReviews", "NotApprovedTotalReviews", "SubjectToAcl", "LimitedToStores", "Deleted",
                 "DownloadExpirationDays", "HasTierPrices", "HasDiscountsApplied", "AvailableStartDateTimeUtc",
                 "AvailableEndDateTimeUtc", "DisplayOrder", "CreatedOnUtc", "UpdatedOnUtc", "ProductProductTagMappings",
-                "DiscountProductMappings" };
+                "DiscountProductMappings", "Author" };
 
             ignore.AddRange(replacePairse.Values);
 

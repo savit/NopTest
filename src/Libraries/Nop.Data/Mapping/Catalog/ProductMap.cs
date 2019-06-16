@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Nop.Core.Domain.Catalog;
 
@@ -24,6 +24,7 @@ namespace Nop.Data.Mapping.Catalog
             builder.Property(product => product.MetaKeywords).HasMaxLength(400);
             builder.Property(product => product.MetaTitle).HasMaxLength(400);
             builder.Property(product => product.Sku).HasMaxLength(400);
+            builder.Property(product => product.Author).HasMaxLength(400);
             builder.Property(product => product.ManufacturerPartNumber).HasMaxLength(400);
             builder.Property(product => product.Gtin).HasMaxLength(400);
             builder.Property(product => product.AdditionalShippingCharge).HasColumnType("decimal(18, 4)");

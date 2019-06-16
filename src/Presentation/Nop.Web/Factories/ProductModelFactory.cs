@@ -71,7 +71,7 @@ namespace Nop.Web.Factories
         private readonly OrderSettings _orderSettings;
         private readonly SeoSettings _seoSettings;
         private readonly VendorSettings _vendorSettings;
-
+        private const string _CATEGORY_BOOK = "Books";
         #endregion
 
         #region Ctor
@@ -1157,6 +1157,9 @@ namespace Nop.Web.Factories
             if (product == null)
                 throw new ArgumentNullException(nameof(product));
 
+            var productCategories = _categoryService.GetProductCategoriesByProductId(product.Id);
+            var isBook = productCategories.Any(category => category.Category.Name == _CATEGORY_BOOK);
+
             //standard properties
             var model = new ProductDetailsModel
             {
@@ -1171,6 +1174,8 @@ namespace Nop.Web.Factories
                 ProductType = product.ProductType,
                 ShowSku = _catalogSettings.ShowSkuOnProductDetailsPage,
                 Sku = product.Sku,
+                ShowAuthor = isBook,
+                Author = product.Author,
                 ShowManufacturerPartNumber = _catalogSettings.ShowManufacturerPartNumber,
                 FreeShippingNotificationEnabled = _catalogSettings.ShowFreeShippingNotification,
                 ManufacturerPartNumber = product.ManufacturerPartNumber,

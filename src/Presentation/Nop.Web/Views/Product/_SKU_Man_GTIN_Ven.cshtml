@@ -25,6 +25,14 @@
             <span class="value" id="gtin-@Model.Id">@Model.Gtin</span>
         </div>
     }
+    @*Author Book*@
+    @if (!string.IsNullOrWhiteSpace(Model.Author) && Model.ShowAuthor)
+    {
+        <div class="sku" @(string.IsNullOrWhiteSpace(Model.Author) ? Html.Raw("style=\"display:none\"") : null)>
+            <span class="label">@T("Products.Author"):</span>
+            <span class="value" itemprop="author" id="author-@Model.Id">@Model.Author</span>
+        </div>
+    }
     @*Vendor*@
     @if (Model.ShowVendor)
     {

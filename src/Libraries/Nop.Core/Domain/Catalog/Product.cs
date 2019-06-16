@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Nop.Core.Domain.Discounts;
@@ -132,6 +132,8 @@ namespace Nop.Core.Domain.Catalog
         /// Gets or sets the SKU
         /// </summary>
         public string Sku { get; set; }
+
+        public string Author { get; set; }
 
         /// <summary>
         /// Gets or sets the manufacturer part number
